@@ -4,7 +4,6 @@ header("Content-Type: application/json");
 header('Access-Control-Allow-Method: DELETE');
 header('Access-Control-Allow-Headers: Content-Type, Access-Allow-Headers, Authorization, X-Request-Width');
 $requestMethod = $_SERVER["REQUEST_METHOD"];
-
 include('function.php');
 
 if ($requestMethod == "DELETE") {

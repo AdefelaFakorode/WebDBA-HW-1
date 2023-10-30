@@ -15,7 +15,6 @@ if($requestMethod == 'POST'){
      else{
         $storePlayer = storePlayer($inputData);
      }
-     
 }
 else{
     $data = [
