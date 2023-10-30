@@ -1,5 +1,4 @@
 <?php
-//error_reporting(0);
 header("Access-Control-Allow-Origin:*");
 header("Content-Type: application/json");
 header('Access-Control-Allow-Method: PUT');
@@ -16,7 +15,7 @@ if($requestMethod == 'PUT'){
      else{
         $updatePlayer = updatePlayer($inputData, $_GET);
      }
-     
+
 }
 else{
     $data = [
@@ -26,5 +25,4 @@ else{
     header('HTTP/1.0 405 Method Not Allowed');
     echo json_encode($data);
 }
-
 ?>

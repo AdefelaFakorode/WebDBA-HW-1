@@ -46,7 +46,8 @@ function updatePlayer($playerInput, $playerParams) {
         }
     }
 
-function error422($message){
+
+    function error422($message){
     $data = [
         'status' => 422,
         'message' => $message,
@@ -95,7 +96,6 @@ function storePlayer($playerInput){
     }
 }
 
-
 function getPlayerList(){
     global $conn;
 
@@ -132,7 +132,6 @@ function getPlayerList(){
         return json_encode($data);
     }
 }
-
 
 function deletePlayer($playerParams){
     global $conn;
